@@ -121,7 +121,7 @@ var jsonpadRealtime = (function() {
 						repeatConnect();
 					},
 					function(responseData) {
-						console.log("An error occurred: %O", responseData);
+						window.console && console.log("An error occurred: %O", responseData);
 					}
 				);
 			}());
@@ -176,7 +176,7 @@ var jsonpadRealtime = (function() {
 						}
 					},
 					function(responseData) {
-						console.log("An error occurred: %O", responseData);
+						window.console && console.log("An error occurred: %O", responseData);
 					}
 				);
 			}());
@@ -229,7 +229,7 @@ var jsonpadRealtime = (function() {
 						}
 					},
 					function(responseData) {
-						console.log("An error occurred: %O", responseData);
+						window.console && console.log("An error occurred: %O", responseData);
 					}
 				);
 			}());
