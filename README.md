@@ -12,7 +12,7 @@ Then, include the `jsonpadrealtime.js` file in your page:
 
 	<script src="jsonpad-realtime-js/src/jsonpadrealtime.js"></script>
 
-## Documentation
+## Getting started
 
 Here's an example of how to get started:
 
@@ -47,4 +47,31 @@ Here's an example of how to get started:
 		["list-delete", "item-delete"]
 	);
 
-*Full documentation coming soon.*
+## Documentation
+
+The `jsonpadRealtime` object has 3 functions:
+
+### .watch(_callback_ [, _events_])
+`callback` A function that will be called when an event occurs. This function should take 3 arguments:
+
+- `objectId` The name/id of the list/item affected by the event.
+- `eventData` An object containing information associated with the event.
+- `eventType` A string containing the type of event that occurred.
+
+`events` An optional array of event types to watch for. See [jsonpad Realtime API Documentation](https://jsonpad.io/docs-realtime#Filtering-events) for a list of event types.
+
+### .watchList(_listName_, _callback_ [, _events_])
+
+`listName` The name of the list to watch.
+
+`callback` A function that will be called when an event occurs on the list being watched.
+
+`events` An optional array of event types to watch for.
+
+### .watchItem(_itemId_, _callback_ [, _events_])
+
+`itemId` The id of the item to watch.
+
+`callback` A function that will be called when an event occurs on the item being watched.
+
+`events` An optional array of event types to watch for.
