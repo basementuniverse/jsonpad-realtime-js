@@ -1,5 +1,8 @@
 # jsonpad Realtime API connector
 
+> DEPRECATED
+> This was designed for the old (~2015) version of jsonpad, which has since been rebuilt from the ground-up. This repo no longer works.
+
 This is a Javascript connector for the [jsonpad](https://jsonpad.io) Realtime API, which allows you to get realtime updates when lists and items change.
 
 See the [jsonpad Realtime API Documentation](https://jsonpad.io/docs-realtime) for more information on the jsonpad Realtime API.
